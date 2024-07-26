@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 3vmax;
+    padding-bottom: 3vh;
+}
+.main{
+    width: 80%;
+    height: 75vh;
+    border: 1px solid red;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px green;
+    border-radius: 10px;
+    background-color: rgb(238, 231, 231);
+}
+.addSection{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addSection input{
+    margin-top: 15vh;
+    padding: 2vh 1vmax;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid green;
+    font-size: 1.5vmax;
+}
+.addSection input::placeholder{
+    font-size: 1.5vmax;
+}
+.addSection button{
+    margin-top: 8vh;
+    padding: 2vh 2.8vmax;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vmax;
+}
+.listSection{
+    height: 90%;
+    width: 35%;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+.listSection ul{
+    font-size: 1.5vmax;
+}
+.delete{
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5vmax;
+    margin-left: 2vw;
+    border-radius: 10px;
+    
+}
+.footer{
+    bottom: 0;
+    font-size: 1vmax;
+    
+ }
+ .footer span a{
+     text-decoration: none;
+     color: #000;
+ }
+ .footer span:hover{
+     text-decoration: underline;
+     cursor: pointer;
+ }
+@media (max-width:600px) {
+    .main{
+        flex-direction: column-reverse;
+    }
+    .addSection{
+        width: 100%;
+        height: 30%;
+    }
+    .addSection{
+        justify-content: center;
+        gap: 3.5vh;  
+    }
+    .addSection input{
+        margin-top: 0;
+        width: 80%;
+        font-size: 2.5vh;
+    }
+    .addSection button{
+        margin-top: 0;
+        font-size: 2vh;
+    }
+    .listSection{
+        width: 80%;
+        height: 60%;
+    }
+    .listSection ul{
+        font-size: 2.5vmax;
+    }
+    .addSection input::placeholder{
+        font-size: 2.5vmax;
+    }
+    .footer{
+        position: absolute;
+        }
+   
+
+    
+}
